@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(135deg, skyblue 20%, lightgray 80%);
+}
+
+.menu {
+    background-color: aliceblue;
+    width: 300px;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu p {
+    margin: 0px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.social-list {
+    background-color: aliceblue;
+    width: 280px;
+    opacity: 0.3;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.social-list li {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: padding 0.2s linear;
+}
+
+.social-list li:hover {
+    background-color: darkgray;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+.social-list li .fa-brands {
+    margin: 0px 10px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.rotate .fa-solid {
+    transform: rotate(180deg);
+}
+
+.fa-solid {
+    transition: transform 0.2s;
+}
